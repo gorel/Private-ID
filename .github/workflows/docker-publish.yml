@@ -3,6 +3,11 @@ name: Publish private-id Docker Image
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Name of the run'
+        default: 'Run'
 env:
   DISTRO: ubuntu
   REGISTRY: ghcr.io
