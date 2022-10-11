@@ -13,7 +13,7 @@ env:
   REGISTRY: ghcr.io
   LOCAL_IMAGE_NAME: private-id
   LOCAL_IMAGE_TAG: latest
-  REGISTRY_IMAGE_NAME: ghcr.io/${{ github.repository }}
+  REGISTRY_IMAGE_NAME: ghcr.io/${{ github.repository }}/private-id
 
 jobs:
   push:
